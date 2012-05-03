@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_GTI9103.mk
+    $(LOCAL_DIR)/device_I9103.mk
