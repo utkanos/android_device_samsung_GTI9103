@@ -3,13 +3,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/GTI9103/GTI9103-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/I9103/I9103-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/GTI9103/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/I9103/overlay
 
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := device/samsung/GTI9103/kernel
+	LOCAL_KERNEL := device/samsung/I9103/kernel
 else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
@@ -20,5 +20,5 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_GTI9103
-PRODUCT_DEVICE := GTI9103
+PRODUCT_NAME := full_I9103
+PRODUCT_DEVICE := I9103
